@@ -1,7 +1,7 @@
 {
   "name": "instagram-clone",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --config webpack.config.ts --mode development",
@@ -13,12 +13,14 @@
   "description": "",
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.9",
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-react": "^7.26.3",
+    "@tailwindcss/postcss": "^4.0.11",
     "@types/node": "^22.13.9",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
@@ -28,9 +30,10 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.3",
+    "postcss": "^8.5.3",
     "postcss-loader": "^8.1.1",
     "style-loader": "^4.0.0",
-    "tailwindcss": "^4.0.10",
+    "tailwindcss": "^3.4.17",
     "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",
     "webpack": "^5.98.0",

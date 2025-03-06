@@ -2,13 +2,13 @@ import path from "path";
 import { fileURLToPath } from "url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
-import { Configuration } from "webpack";
+import * as webpack from "webpack";
 import "webpack-dev-server";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const config: Configuration = {
+const config: webpack.Configuration = {
   entry: "./src/main.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
